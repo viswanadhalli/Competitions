@@ -1,0 +1,135 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: orange;
+    color: white;
+
+}
+.header1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.Competitions{
+    display: flex;
+    flex-direction: column;
+}
+.Competitions,Com,hr,new1{
+    border: 1px solid red;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,300&display=swap');
+  :root{
+      --gray-50 : #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-300: #d1d5db;
+      --gray-400: #93a3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+  }
+  #light-theme {
+      --primary: #f3f4f6;
+      --comp-primary: #1f2937;
+      --bg: f1f5f9;
+      --gray-200: #e5e7eb;
+      --white: black;
+      --black: white;
+      --blur:10px
+  }
+  #dark-theme {
+      --primary:   #1f2937 ;
+      --comp-primary: #f3f4f6;
+      --white: white;
+      --gray-200: #374151;
+      --black: black;
+  }
+  .body{
+      color: var(--comp-primary);
+  }
+  .form{
+      box-shadow: 5px 5px var(--blur) rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  *{
+      transition: all 0.3s ease;
+  }
+  input,textarea{
+      background-color: var(--comp-primary);
+      color: var(--black);
+  }
+  button{
+      background-color: var(--comp-primary);
+      color: var(--primary);
+  }
+  
+  .track{
+      width: 64px;
+      min-width: 64px;
+      max-width: 64px;
+      aspect-ratio: 2;
+      display: flex;
+      position: relative;
+      border-radius: 1000px;
+  }
+  .thumb{
+      height: 24px;
+      min-height: 24px;
+      max-height: 24px;
+      aspect-ratio: 1;
+      position: absolute;
+      margin: auto;
+      border-radius: 50%;
+  }
+  .toggle{
+      position: absolute;
+      background-color: lightgreen;
+      transform: translateX(130%);
+  }
+  form{
+    background-color: var(--gray-200);
+    padding-left: 9rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid;
+    box-shadow: 10px 10px #888888;
+  }
+  @media only screen and (max-width: 768px) {
+    img{
+        width: 100%;
+        height: 75%;
+    }
+    .Competitions{
+        font-size: 0.15rem;
+    }
+    .header{
+        font-size: 0.25rem;
+    }
+    h3{
+        font-size: 0.75rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    form{
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        padding-left: 3rem;
+    }
+  }
